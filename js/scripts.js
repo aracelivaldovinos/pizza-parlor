@@ -6,17 +6,17 @@ function Pizza (plain, topping, size, cost) {
   this.cost = cost
 }
 
-// Pizza.prototype.totalOfToppings = function () {
-//   if (this.meatTopping === true && this,vegetableTopping === true) {
-//   this.plain += this.topping
-//   }
-//   else if (this.meatTopping ===false) {
-//     this.plain += this.topping
-//   }
-//   else {
-//     this.plain += this.topping
-//   }
-// }
+Pizza.prototype.totalOfToppings = function () {
+  if (this.meatTopping === true && this,vegetableTopping === true) {
+  this.plain += this.topping
+  }
+  else if (this.meatTopping ===false) {
+    this.plain += this.topping
+  }
+  else {
+    this.plain += this.topping
+  }
+}
 
 // Pizza.prototype.sizeOfPizza = function() {
 //   this.plain = 6
