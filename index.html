@@ -7,7 +7,47 @@
   <title>Pizza Parlor</title>
 </head>
 <body>
-  
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Welcome to Luigi's Pizza Parlor</h1>
+    </div>
+    <form id="form0ne">
+      <div class="row">
+        <div class="col">
+          <h4>Select size:</h4>
+          <div class="form-group"> 
+            <select class="form-control">
+            <option id="small">Small</option>
+            <option id="medium">Medium</option>
+            <option id="large">Large</option>
+            </select>
+          </div>
+          <h4>Select Toppings:</h4>
+          <div class="form-group">
+            <p>Meat selection:</p>
+            <select class="form-control">
+              <option id="meat1">Pepperoni</option>
+              <option id="meat2">Sausage</option>
+              <option id="meat3">Bacon</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>Veggie selection:</p>
+            <select class="form-control">
+              <option id="veggie1">Mushroom</option>
+              <option id="veggie2">Green Peppers</option>
+              <option id="veggie3">Black Olives</option>
+            </select>
+          </div>
+
+        </div>
+        <div class="col">
+          <p>Final Cost: <span id="cost"></span></p>
+          
+        </div>
+      </div>
+    </form>
+  </div>
   
 </body>
 </html>

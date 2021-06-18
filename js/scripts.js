@@ -1,3 +1,5 @@
+let pizza1 = new Pizza (6,true,true,0,"large", 0)
+
 function Pizza (plain, meatTopping,vegetableTopping, topping, size, cost) {
   this.plain = plain
   this.meatTopping = meatTopping
@@ -8,7 +10,6 @@ function Pizza (plain, meatTopping,vegetableTopping, topping, size, cost) {
 }
 
 Pizza.prototype.totalOfToppings = function () {
-  this.plain = 6
   if (this.meatTopping === true && this,vegetableTopping === true) {
   this.plain += this.topping
   }
