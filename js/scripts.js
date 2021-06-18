@@ -16,40 +16,40 @@ Pizza.prototype.sizeOfPizza = function() {
   } 
 }
 
-Pizza.prototype.totalOfToppings = function () {
-  if (meats === "meat1") {
-    this.toppings += 0.89
-    if (veggies ==="veggie1" || veggies ==="veggie2" || veggies ==="veggie3") {
-      this.toppings += 0.50
-    }
-    else{
-      this.toppings +=0
-    }
-  } 
-  else if (meats === "meat2") {
-    this.toppings += 1
-    if (veggies ==="veggie1" || veggies ==="veggie2" || veggies ==="veggie3") {
-      this.toppings += 0.50
-    }
-    else{
-      this.toppings +=0
-    }
-  }
-  else if (meats === "meat3") {
-    this.toppings += 1.99
-    if (veggies ==="veggie1" || veggies ==="veggie2" || veggies ==="veggie3") {
-      this.toppings += 0.50
-    }
-    else{
-      this.toppings +=0
-    }
-  }
-  else {
-    if (veggies ==="veggie1" || veggies ==="veggie2" || veggies ==="veggie3") {
-      this.toppings += 0.50
-    }
-  }
-}
+// Pizza.prototype.totalOfToppings = function () {
+//   if (meats === "meat1") {
+//     this.toppings += 0.89
+//     if (veggies ==="veggie1" || veggies ==="veggie2" || veggies ==="veggie3") {
+//       this.toppings += 0.50
+//     }
+//     else{
+//       this.toppings +=0
+//     }
+//   } 
+//   else if (meats === "meat2") {
+//     this.toppings += 1
+//     if (veggies ==="veggie1" || veggies ==="veggie2" || veggies ==="veggie3") {
+//       this.toppings += 0.50
+//     }
+//     else{
+//       this.toppings +=0
+//     }
+//   }
+//   else if (meats === "meat3") {
+//     this.toppings += 1.99
+//     if (veggies ==="veggie1" || veggies ==="veggie2" || veggies ==="veggie3") {
+//       this.toppings += 0.50
+//     }
+//     else{
+//       this.toppings +=0
+//     }
+//   }
+//   else {
+//     if (veggies ==="veggie1" || veggies ==="veggie2" || veggies ==="veggie3") {
+//       this.toppings += 0.50
+//     }
+//   }
+// }
 
 
 Pizza.prototype.totalCost = function() {
@@ -61,11 +61,14 @@ let pizza1 = (0,0,0,0)
 $(document).ready(function(){
   $("form#formOne").submit(function(event){
     event.preventDefault();
-  this.plain = 6
-  this.toppings = 0
-  this.size = $("select#size").val()
-  let meats = $("select#meats").val()
-  let veggies = $("select#veggies").val()
+    this.plain = 6
+    this.toppings = 0
+    pizza1.size = $("select#sizeOptions").val()
+    $("#sizeOutput").text(pizza1.size + ":" + Pizza.sizeOfPizza())
+  });
+  });
+  // let meats = $("select#meats").val()
+  // let veggies = $("select#veggies").val()
     
 
     
@@ -117,7 +120,5 @@ $(document).ready(function(){
   //   }
 
 
-    
-    
-  })
-})
+  
+ 
