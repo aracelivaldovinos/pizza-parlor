@@ -20,3 +20,15 @@ Pizza.prototype.totalOfToppings = function () {
   }
 }
 
+Pizza.prototype.sizeOfPizza = function() {
+  this.plain = 6
+  medium = 2
+  large = 4
+  if (this.size === "medium") {
+    this.plain += medium
+  }else if (this.size === "large") {
+    this.plain += large
+  }else {
+    this.plain = this.plain
+  }
+}
