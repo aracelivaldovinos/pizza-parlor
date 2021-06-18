@@ -19,3 +19,4 @@ Pizza.prototype.totalOfToppings = function () {
     this.plain += this.topping
   }
 }
+

@@ -23,4 +23,21 @@ Code: Pizza.prototype.totalOfToppings= function () {
     this.plain += this.topping
   }
 }
-Output: totalOfTopping
+Output: total of toppings
+
+
+Test: Create a method for sizeOfPizza
+Pizza.prototype.sizeOfPizza = function() {
+  this.plain = 6
+  medium = 2
+  large = 4
+  if (this.size === "medium") {
+    this.plain += medium
+  }else if (this.size === "large") {
+    this.plain += large
+  }else {
+    this.plain = this.plain
+  }
+}
+
+Output: price of size
