@@ -42,6 +42,7 @@ $(document).ready(function(){
   let toppings = 0
   let size = $("select#size").val()
   let meats = $("select#meats").val()
+  let veggies = $("select#veggies").val()
     if (size === "medium")  {
       plain += 2
     }else if (size === "large") {
@@ -52,10 +53,35 @@ $(document).ready(function(){
 
     if (meats === "meat1") {
       toppings += 0.89
-    } else if (meats === "meat2") {
+      if (veggies ==="veggie1" || veggies ==="veggie2" || veggies ==="veggie3") {
+        toppings += 0.50
+      }
+      else{
+        toppings +=0
+      }
+    } 
+    else if (meats === "meat2") {
       toppings += 1
-    }else {
+      if (veggies ==="veggie1" || veggies ==="veggie2" || veggies ==="veggie3") {
+        toppings += 0.50
+      }
+      else{
+        toppings +=0
+      }
+    }
+    else if (meats === "meat3") {
       toppings += 1.99
+      if (veggies ==="veggie1" || veggies ==="veggie2" || veggies ==="veggie3") {
+        toppings += 0.50
+      }
+      else{
+        toppings +=0
+      }
+    }
+    else {
+      if (veggies ==="veggie1" || veggies ==="veggie2" || veggies ==="veggie3") {
+        toppings += 0.50
+      }
     }
     
     
