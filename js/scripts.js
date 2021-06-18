@@ -36,16 +36,24 @@ Pizza.prototype.totalCost = function() {
 let pizza1 = (0,0,0,0)
 
 $(document).ready(function(){
-    this.plain = 6
-  const size = $("select#size").val()
-  const meats = $("select#meats").val()
-  const veggies = $("select#veggies").val()
-  $("button#submit").click(function(event){
+  $("form#formOne").submit(function(event){
     event.preventDefault();
-    if (size === $("#size").val("#small")) {
-      console.log(pizza1.plain)
+  let plain = 6
+  let size = $("select#size").val()
+    if (size === "medium")  {
+      plain += 2
+    }else if (size === "large") {
+      plain +=4
+    }else {
+      plain 
+    }  
+  // const meats = $("select#meats").val()
 
-    }
+  // const veggies = $("select#veggies").val()
+  //   if (size === "small") {
+  //     alert(size)  
+
+  //   }
     
     
   })
