@@ -33,3 +33,6 @@ Pizza.prototype.sizeOfPizza = function() {
   }
 }
 
+Pizza.prototype.totalCost = function() {
+  this.cost += this.plain
+}
