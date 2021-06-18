@@ -32,3 +32,4 @@ Pizza.prototype.sizeOfPizza = function() {
     this.plain = this.plain
   }
 }
+

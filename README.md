@@ -27,7 +27,7 @@ Output: total of toppings
 
 
 Test: Create a method for sizeOfPizza
-Pizza.prototype.sizeOfPizza = function() {
+Code: Pizza.prototype.sizeOfPizza = function() {
   this.plain = 6
   medium = 2
   large = 4
@@ -41,3 +41,10 @@ Pizza.prototype.sizeOfPizza = function() {
 }
 
 Output: price of size
+
+Test: Create a method for totalCost
+Code: Pizza.prototype.totalCost = function() {
+  this.cost += this.plain
+}
+
+Output: total cost
