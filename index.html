@@ -16,16 +16,16 @@
         <div class="col">
           <h4>Select size:</h4>
           <div class="form-group"> 
-            <select class="form-control">
+            <select class="form-control" id="size">
             <option id="small">Small</option>
-            <option id="medium">Medium</option>
-            <option id="large">Large</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
             </select>
           </div>
           <h4>Select Toppings:</h4>
           <div class="form-group">
             <p>Meat selection:</p>
-            <select class="form-control">
+            <select class="form-control" id="meats">
               <option id="meat1">Pepperoni</option>
               <option id="meat2">Sausage</option>
               <option id="meat3">Bacon</option>
@@ -33,19 +33,19 @@
           </div>
           <div class="form-group">
             <p>Veggie selection:</p>
-            <select class="form-control">
+            <select class="form-control" id="veggies">
               <option id="veggie1">Mushroom</option>
               <option id="veggie2">Green Peppers</option>
               <option id="veggie3">Black Olives</option>
             </select>
           </div>
-
         </div>
         <div class="col">
           <p>Final Cost: <span id="cost"></span></p>
           
         </div>
       </div>
+      <button type="button" class="btn btn-secondary" id="submit">Submit</button>
     </form>
   </div>
   
