@@ -39,7 +39,9 @@ $(document).ready(function(){
   $("form#formOne").submit(function(event){
     event.preventDefault();
   let plain = 6
+  let toppings = 0
   let size = $("select#size").val()
+  let meats = $("select#meats").val()
     if (size === "medium")  {
       plain += 2
     }else if (size === "large") {
@@ -47,13 +49,15 @@ $(document).ready(function(){
     }else {
       plain 
     }  
-  // const meats = $("select#meats").val()
 
-  // const veggies = $("select#veggies").val()
-  //   if (size === "small") {
-  //     alert(size)  
-
-  //   }
+    if (meats === "meat1") {
+      toppings += 0.89
+    } else if (meats === "meat2") {
+      toppings += 1
+    }else {
+      toppings += 1.99
+    }
+    
     
     
   })
