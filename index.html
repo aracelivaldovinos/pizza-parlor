@@ -22,17 +22,41 @@
             <option value="medium">Medium $8</option>
             <option value="large">Large $10</option>
             </select>
-            <button type="button" class="btn btn-primary" id="submit">Add!</button>
+            
           </div>
           <h4>Select Toppings:</h4>
-          <div class="form-group">
+          <div class="form-check">
             <p>Meat selection:</p>
-            <select class="form-control" id="meats">
+                <input class="form-check-input" type="checkbox" value="Pepperoni" name="toppingCheck">
+                <label class="form-check-label" for="pepperoni">
+                  Pepperoni
+                </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Sausage" name="toppingCheck">
+                <label class="form-check-label" for="sausage">
+                  Sausage
+                </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Bacon" name="toppingCheck">
+                <label class="form-check-label" for="bacon">
+                  Bacon
+                </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Chicken" name="toppingCheck">
+                <label class="form-check-label" for="chicken">
+                  Chicken
+                </label>
+                </div>
+                
+            <!-- <select class="form-control" id="meats" name="meatOptions">
               <option value="none1">None</option>
               <option value="meat1">Pepperoni</option>
               <option value="meat2">Sausage</option>
               <option value="meat3">Bacon</option>
-            </select>
+            </select> -->
           </div>
           <div class="form-group">
             <p>Veggie selection:</p>
@@ -44,13 +68,13 @@
             </select>
           </div>
         </div>
-      
+        <button type="button" class="btn btn-primary" id="addMeat">Add!</button>
     </form>
     <div class="col">
       <h5>Reciept:</h5>
       <div class="form-group">
-        <p id="sizeOutput">Size:</p>
-        <p id="toppingsOutput">Toppings:</p>
+        <p>Size: <span id="sizeOutput"></span></p>
+        <p>Toppings: <span id="toppingsOutput"></span></p>
         <p id="totalCost">Total cost:</p> 
       </div>
     </div>  
