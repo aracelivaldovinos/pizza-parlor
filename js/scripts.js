@@ -15,15 +15,7 @@ Pizza.prototype.pizzaSizeAmt = function () {
   }
 }
 
-Pizza.prototype.toppingAmnt = function () {
-  let toppingsPrice = 0
-  for (i =0; i<=this.topping.length; i++) {
-    if (this.topping != "none") {
-      let toppingPrice = this.topping.length * 2
-      return toppingPrice
-    } 
-  }
-  }
+
 
 
 

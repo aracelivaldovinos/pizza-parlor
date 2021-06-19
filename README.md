@@ -31,3 +31,9 @@ for (i =0; i<=this.topping.length; i++) {
 }
 }
 Output: 2
+
+Test: Create method to get total cost
+Code: Pizza.prototype.totalCost = function(2, 8) {
+ let totalCost = toppingAmnt + sizeAmt
+}
+Output: 10
