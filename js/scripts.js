@@ -26,7 +26,9 @@ Pizza.prototype.toppingAmnt = function () {
   }
 
 
-
+Pizza.prototype.totalCost = function(toppingAmnt, sizeAmnt) {
+    let totalCost = toppingAmnt + sizeAmnt
+}
 
 
 
