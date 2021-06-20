@@ -1,5 +1,4 @@
-let pizza = new Pizza (["pepperoni","chicken"],"small")
-
+//Business Logic
 function Pizza (topping, size, cost) {
   this.topping = topping
   this.size = size
@@ -26,6 +25,8 @@ Pizza.prototype.toppingAmnt = function () {
 
 Pizza.prototype.totalCost = function (toppingPrice, sizePrice) {
   totalCost = toppingPrice + sizePrice
+  $("#displayTotalCost").html(totalCost)
+
 }
 
 //UI Logic
@@ -43,6 +44,7 @@ $(document).ready(function(){
     let pizza = new Pizza (toppingArray, size)
     let sizeAmnt = pizza.sizeAmnt ()
     let toppingAmnt = pizza.toppingAmnt()
+    pizza.totalCost(toppingAmnt, sizeAmnt)
 
   })
 
