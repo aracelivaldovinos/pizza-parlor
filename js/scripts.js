@@ -31,7 +31,11 @@ Pizza.prototype.totalCost = function (toppingPrice, sizePrice) {
 //UI Logic
 $(document).ready(function(){
   $("button#add").click(function(){
-    
+    let toppingArray = $('input:checked').map(function(){
+      return $(this).val();
+    });
+    $("#displayToppings").text(toppingArray.get())
+    console.log(toppingArray.get());
   })
 
 })
