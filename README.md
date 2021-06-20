@@ -1,5 +1,6 @@
-#### _A web application where a user can create their own pizza_
+# _Pizza Parlor_
 
+#### _A web application where a user can create their own pizza_
 
 #### By _Araceli Valdovinos_
 
@@ -23,7 +24,7 @@ _This browser application allows users to order their own pizza. Users are able 
 * _Clone the repository to desktop_
 * _Navigate inside the folder_
 * _open index.html_
-* 
+
 
 
 
