@@ -40,6 +40,10 @@ $(document).ready(function(){
     size = $("select#size").val()
     $("#displaySize").text(size)
 
+    let pizza = new Pizza (toppingArray, size)
+    let sizeAmnt = pizza.sizeAmnt ()
+    let toppingAmnt = pizza.toppingAmnt()
+
   })
 
 })
