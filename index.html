@@ -15,61 +15,68 @@
     <div class="row">
       <div class="col">
         <div class="form-group">
+          <label for="personName">Add your name:</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="form-group">
           <label for="sizeOfPizza">Select a size:</label>
           <select class="form-control" id="size">
-            <option value ="small">Small $6</option>
-            <option  value ="medium">Medium $8</option>
-            <option value="large">Large $10</option>
+            <option value ="Small">Small $6</option>
+            <option  value ="Medium">Medium $8</option>
+            <option value="Large">Large $10</option>
           </select>
         </div>
         <div class="row">
           <div class="col">
+            <p>Select your toppings:</p>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="pepperoni" id="defaultCheck1">
+              <input class="form-check-input" type="checkbox" value="Pepperoni" id="defaultCheck1">
               <label class="form-check-label" for="defaultCheck1">
                   Pepperoni
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="sausage" id="defaultCheck1">
+              <input class="form-check-input" type="checkbox" value="Sausage" id="defaultCheck1">
               <label class="form-check-label" for="defaultCheck1">
                   Sausage
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="chicken" id="defaultCheck1">
+              <input class="form-check-input" type="checkbox" value="Chicken" id="defaultCheck1">
               <label class="form-check-label" for="defaultCheck1">
                   Chicken
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="bacon" id="defaultCheck1">
+              <input class="form-check-input" type="checkbox" value="Bacon" id="defaultCheck1">
               <label class="form-check-label" for="defaultCheck1">
                   Bacon
               </label>
             </div> 
           </div>
           <div class="col">
+            <br>
+            <br>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="cheese" id="defaultCheck1">
+              <input class="form-check-input" type="checkbox" value="Cheese" id="defaultCheck1">
               <label class="form-check-label" for="defaultCheck1">
                   Cheese
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="blackOlives" id="defaultCheck1">
+              <input class="form-check-input" type="checkbox" value="Black Olives" id="defaultCheck1">
               <label class="form-check-label" for="defaultCheck1">
                   Black Olives
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="mushroom" id="defaultCheck1">
+              <input class="form-check-input" type="checkbox" value="Mushroom" id="defaultCheck1">
               <label class="form-check-label" for="defaultCheck1">
                   Mushroom
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="greenPeppers" id="defaultCheck1">
+              <input class="form-check-input" type="checkbox" value="Green Peppers" id="defaultCheck1">
               <label class="form-check-label" for="defaultCheck1">
                   Green Peppers
               </label>
@@ -78,12 +85,14 @@
         </div>
       </div>
       <div class="col">
+        <h5>Receipt</h5>
+        <p>Name: <span id="displayName"></span></p>
         <p>Size: <span id="displaySize"></span></p>
         <p>Toppings: <span id="displayToppings"></span></p>
-        <p>Total Cost: <span id="displayTotalCost"></span></p>
+        <p>Total Cost: $ <span id="displayTotalCost"></span></p>
       </div>
     </div>
-    <button type="button" class="btn btn-primary" id="add">add</button>
+    <button type="button" class="btn btn-primary" id="add">Checkout</button>
   </div>
 </body>
 </html>
