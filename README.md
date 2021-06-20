@@ -1,13 +1,12 @@
 Describe: Pizza ()
 
-let pizza = new Pizza (["pepperoni","chicken"],"small",0)
+let pizza = new Pizza (["pepperoni","chicken"],"small")
 
 
 Test: Create a pizza constructor with properties 
-Code: function Pizza (topping, size, cost) {
+Code: function Pizza (topping, size) {
   this.topping = topping
   this.size = size
-  this.cost = cost
 }
 Output: Pizza (["pepperoni","cheese"],"small",0)
 
@@ -28,8 +27,13 @@ Code: Pizza.prototype.sizeAmnt = function () {
 Output: 6
 
 Test: Create a method to calculate topping price
-Pizza.prototype.toppingAmnt = function () {
+Code: Pizza.prototype.toppingAmnt = function () {
   toppingPrice = this.topping.length * 2
   return toppingPrice
 }
 Output: 4
+
+Test: Create a method to calculate total cost
+Code: Pizza.prototype.totalCost = function (toppingPrice, sizePrice) {
+  totalCost = toppingPrice + sizePrice
+Output: 10
