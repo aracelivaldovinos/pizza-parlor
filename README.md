@@ -1,16 +1,15 @@
 Describe: Pizza ()
 
-let pizza = new Pizza (["pepperoni","chicken",0,"small",0])
+let pizza = new Pizza (["pepperoni","chicken"],"small",0)
 
 
 Test: Create a pizza constructor with properties 
-Code: function Pizza (topping, toppingPrice, size, cost) {
+Code: function Pizza (topping, size, cost) {
   this.topping = topping
-  this.toppingPrice = toppingPrice
   this.size = size
   this.cost = cost
 }
-Output: Pizza (["pepperoni","cheese"],0,"small",0)
+Output: Pizza (["pepperoni","cheese"],"small",0)
 
 Test: Create a method to calculate size price 
 Code: Pizza.prototype.sizeAmnt = function () {

@@ -1,8 +1,7 @@
-let pizza = new Pizza (["pepperoni","chicken",0,"small",0])
+let pizza = new Pizza (["pepperoni","chicken"],"small",0)
 
-function Pizza (topping, toppingPrice, size, cost) {
+function Pizza (topping, size, cost) {
   this.topping = topping
-  this.toppingPrice = toppingPrice
   this.size = size
   this.cost = cost
 }
@@ -19,4 +18,9 @@ Pizza.prototype.sizeAmnt = function () {
     sizePrice = 10
   }
   return sizePrice
+}
+
+Pizza.prototype.toppingAmnt = function () {
+  toppingPrice = this.topping.length * 2
+  return toppingPrice
 }
