@@ -33,6 +33,7 @@ Pizza.prototype.totalCost = function (toppingPrice, sizePrice) {
 $(document).ready(function(){
   $("button#add").click(function(event){
     event.preventDefault();
+    $("#displayReceipt").show()
     let toppingArray = $('input:checked').map(function(){
       return $(this).val();
     });
