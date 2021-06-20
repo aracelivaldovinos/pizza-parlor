@@ -36,6 +36,10 @@ $(document).ready(function(){
     });
     $("#displayToppings").text(toppingArray.get())
     console.log(toppingArray.get());
+
+    size = $("select#size").val()
+    $("#displaySize").text(size)
+
   })
 
 })
