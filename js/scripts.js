@@ -27,3 +27,11 @@ Pizza.prototype.toppingAmnt = function () {
 Pizza.prototype.totalCost = function (toppingPrice, sizePrice) {
   totalCost = toppingPrice + sizePrice
 }
+
+//UI Logic
+$(document).ready(function(){
+  $("button#add").click(function(){
+    
+  })
+
+})
