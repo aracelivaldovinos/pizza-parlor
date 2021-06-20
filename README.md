@@ -27,3 +27,10 @@ Code: Pizza.prototype.sizeAmnt = function () {
   return sizePrice
 }
 Output: 6
+
+Test: Create a method to calculate topping price
+Pizza.prototype.toppingAmnt = function () {
+  toppingPrice = this.topping.length * 2
+  return toppingPrice
+}
+Output: 4
